@@ -1,3 +1,4 @@
+// selecting all the needed elements from html file
 let calcBtn = document.querySelector(".calculator-button");
 let resultScreen = document.querySelector(".result");
 let firstOperand;
@@ -5,6 +6,7 @@ let secondOperand;
 let operator;
 let summary = document.querySelector(".summary");
 
+// add an event handler
 calcBtn.addEventListener("click", function (e) {
   if (e.target.matches("button")) {
     let key = e.target;
